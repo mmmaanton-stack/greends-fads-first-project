@@ -1,0 +1,30 @@
+Question 5.1: Explain the copy command (cp ../temp-* .)
+
+The command "cp ../temp-* ." copies files from the parent directory
+into the current directory.
+- "cp" is the copy command.
+- "../" means the parent directory (one level up).
+- "temp-*" is a wildcard that matches all files starting with "temp-".
+- "." means the current directory.
+
+So the command copies temp-data.csv, temp-average.py, and temp-doc.txt
+from the parent folder (my-first-project) into the current folder
+(greends-fads-first-project).
+
+
+Question 5.2: Why did we not have to do "git init" in this case?
+
+Because the folder greends-fads-first-project was created by the
+"git clone" command. When we clone a repository, Git automatically:
+- creates the ".git" hidden directory,
+- initializes it as a git repository,
+- and connects it to the remote (origin) on GitHub.
+
+So the repository already exists and no manual "git init" is needed.
+
+
+Question 5.3: Commit the copied files.
+
+Commands used:
+    git add .
+    git commit -m "add temp files and answer exercise questions"
